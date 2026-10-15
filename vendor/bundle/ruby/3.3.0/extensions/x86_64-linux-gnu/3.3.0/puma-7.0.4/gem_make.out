@@ -1,0 +1,25 @@
+current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/puma-7.0.4/ext/puma_http11
+/usr/bin/ruby3.3 -I/usr/lib/ruby/vendor_ruby extconf.rb
+checking for pkg-config for openssl... not found
+checking for BIO_read() in -llibcrypto... no
+checking for BIO_read() in -lcrypto... no
+checking for BIO_read() in -llibeay32... no
+** Puma will be compiled without SSL support
+creating Makefile
+
+current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/puma-7.0.4/ext/puma_http11
+make DESTDIR\= sitearchdir\=./.gem.20261015-276987-81ap0q sitelibdir\=./.gem.20261015-276987-81ap0q clean
+
+current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/puma-7.0.4/ext/puma_http11
+make DESTDIR\= sitearchdir\=./.gem.20261015-276987-81ap0q sitelibdir\=./.gem.20261015-276987-81ap0q
+compiling http11_parser.c
+compiling mini_ssl.c
+compiling puma_http11.c
+linking shared-object puma/puma_http11.so
+
+current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/puma-7.0.4/ext/puma_http11
+make DESTDIR\= sitearchdir\=./.gem.20261015-276987-81ap0q sitelibdir\=./.gem.20261015-276987-81ap0q install
+/usr/bin/install -c -m 0755 puma_http11.so ./.gem.20261015-276987-81ap0q/puma
+
+current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/puma-7.0.4/ext/puma_http11
+make DESTDIR\= sitearchdir\=./.gem.20261015-276987-81ap0q sitelibdir\=./.gem.20261015-276987-81ap0q clean

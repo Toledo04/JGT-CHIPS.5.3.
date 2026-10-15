@@ -1,9 +1,17 @@
 class MoviesController < ApplicationController
   before_action :set_movie, only: %i[ show edit update destroy ]
+  before_action :load_ratings_and_sorting, only: [:index]
 
   # GET /movies or /movies.json
   def index
-    @movies = Movie.all
+    @movies = Movie.where(rating: @selected_ratings)
+
+    case @sort
+    when 'title'
+      @movies = @movies.order('title ASC')
+    when 'release_date'
+      @movies = @movies.order('release_date ASC')
+    end
   end
 
   # GET /movies/1 or /movies/1.json
@@ -58,13 +66,32 @@ class MoviesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
     def set_movie
       @movie = Movie.find(params[:id])
     end
 
-    # Only allow a list of trusted parameters through.
     def movie_params
       params.require(:movie).permit(:title, :rating, :description, :release_date)
+    end
+
+    # Clean filter keeping sort and ratings state in session
+    def load_ratings_and_sorting
+      @all_ratings = Movie.all_ratings
+      default_ratings = @all_ratings.index_with { "1" }
+
+      # Sort handling
+      session[:sort] = params[:sort] if params[:sort].present?
+      @sort = session[:sort]
+
+      # Ratings handling with session fallback
+      if params[:ratings].present?
+        session[:ratings] = params[:ratings].respond_to?(:to_unsafe_h) ? params[:ratings].to_unsafe_h : params[:ratings]
+      elsif params[:commit].nil? && session[:ratings].blank?
+        session[:ratings] = default_ratings
+      end
+
+      raw_ratings = params[:ratings] || session[:ratings] || default_ratings
+      @selected_ratings_hash = raw_ratings.is_a?(ActionController::Parameters) ? raw_ratings.to_unsafe_h : raw_ratings
+      @selected_ratings = @selected_ratings_hash.keys
     end
 end
