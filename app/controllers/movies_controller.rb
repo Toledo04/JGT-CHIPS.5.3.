@@ -65,7 +65,7 @@ class MoviesController < ApplicationController
     end
   end
 
-  private
+  private # Keeping tangz DRY 
     def set_movie
       @movie = Movie.find(params[:id])
     end
@@ -74,23 +74,27 @@ class MoviesController < ApplicationController
       params.require(:movie).permit(:title, :rating, :description, :release_date)
     end
 
-    # Clean filter keeping sort and ratings state in session
+    # Keeping session data 
     def load_ratings_and_sorting
       @all_ratings = Movie.all_ratings
       default_ratings = @all_ratings.index_with { "1" }
 
-      # Sort handling
-      session[:sort] = params[:sort] if params[:sort].present?
+      # Sorting handling
+      if params[:sort].present?
+        session[:sort] = params[:sort]
+      end
       @sort = session[:sort]
 
-      # Ratings handling with session fallback
+      # Ratings handling
       if params[:ratings].present?
         session[:ratings] = params[:ratings].respond_to?(:to_unsafe_h) ? params[:ratings].to_unsafe_h : params[:ratings]
-      elsif params[:commit].nil? && session[:ratings].blank?
+      elsif params[:commit].present? && params[:ratings].blank?
+        session[:ratings] = {} # No boxes checked on ratings 
+      elsif session[:ratings].blank?
         session[:ratings] = default_ratings
       end
 
-      raw_ratings = params[:ratings] || session[:ratings] || default_ratings
+      raw_ratings = session[:ratings] || default_ratings
       @selected_ratings_hash = raw_ratings.is_a?(ActionController::Parameters) ? raw_ratings.to_unsafe_h : raw_ratings
       @selected_ratings = @selected_ratings_hash.keys
     end
