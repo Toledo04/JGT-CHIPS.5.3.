@@ -13,10 +13,10 @@ checking for sys/resource.h... yes
 creating Makefile
 
 current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/nio4r-2.7.4/ext/nio4r
-make DESTDIR\= sitearchdir\=./.gem.20261015-276987-kproxr sitelibdir\=./.gem.20261015-276987-kproxr clean
+make DESTDIR\= sitearchdir\=./.gem.20261015-286051-f6orpw sitelibdir\=./.gem.20261015-286051-f6orpw clean
 
 current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/nio4r-2.7.4/ext/nio4r
-make DESTDIR\= sitearchdir\=./.gem.20261015-276987-kproxr sitelibdir\=./.gem.20261015-276987-kproxr
+make DESTDIR\= sitearchdir\=./.gem.20261015-286051-f6orpw sitelibdir\=./.gem.20261015-286051-f6orpw
 compiling bytebuffer.c
 compiling monitor.c
 compiling nio4r_ext.c
@@ -46,8 +46,8 @@ selector.c:525:5: warning: ignoring return value of ‘write’ declared with at
 linking shared-object nio4r_ext.so
 
 current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/nio4r-2.7.4/ext/nio4r
-make DESTDIR\= sitearchdir\=./.gem.20261015-276987-kproxr sitelibdir\=./.gem.20261015-276987-kproxr install
-/usr/bin/install -c -m 0755 nio4r_ext.so ./.gem.20261015-276987-kproxr
+make DESTDIR\= sitearchdir\=./.gem.20261015-286051-f6orpw sitelibdir\=./.gem.20261015-286051-f6orpw install
+/usr/bin/install -c -m 0755 nio4r_ext.so ./.gem.20261015-286051-f6orpw
 
 current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/nio4r-2.7.4/ext/nio4r
-make DESTDIR\= sitearchdir\=./.gem.20261015-276987-kproxr sitelibdir\=./.gem.20261015-276987-kproxr clean
+make DESTDIR\= sitearchdir\=./.gem.20261015-286051-f6orpw sitelibdir\=./.gem.20261015-286051-f6orpw clean

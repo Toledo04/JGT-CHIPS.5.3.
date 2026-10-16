@@ -1,0 +1,1 @@
+web: bunlde exec rails server -p $PORT -e production 

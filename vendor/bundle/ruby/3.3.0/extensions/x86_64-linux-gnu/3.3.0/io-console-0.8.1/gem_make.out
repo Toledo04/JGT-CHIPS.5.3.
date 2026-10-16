@@ -16,16 +16,16 @@ checking for ttyname_r()... yes
 creating Makefile
 
 current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/io-console-0.8.1/ext/io/console
-make DESTDIR\= sitearchdir\=./.gem.20261015-276987-7mutr7 sitelibdir\=./.gem.20261015-276987-7mutr7 clean
+make DESTDIR\= sitearchdir\=./.gem.20261015-286051-rblxzw sitelibdir\=./.gem.20261015-286051-rblxzw clean
 
 current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/io-console-0.8.1/ext/io/console
-make DESTDIR\= sitearchdir\=./.gem.20261015-276987-7mutr7 sitelibdir\=./.gem.20261015-276987-7mutr7
+make DESTDIR\= sitearchdir\=./.gem.20261015-286051-rblxzw sitelibdir\=./.gem.20261015-286051-rblxzw
 compiling console.c
 linking shared-object io/console.so
 
 current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/io-console-0.8.1/ext/io/console
-make DESTDIR\= sitearchdir\=./.gem.20261015-276987-7mutr7 sitelibdir\=./.gem.20261015-276987-7mutr7 install
-/usr/bin/install -c -m 0755 console.so ./.gem.20261015-276987-7mutr7/io
+make DESTDIR\= sitearchdir\=./.gem.20261015-286051-rblxzw sitelibdir\=./.gem.20261015-286051-rblxzw install
+/usr/bin/install -c -m 0755 console.so ./.gem.20261015-286051-rblxzw/io
 
 current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/io-console-0.8.1/ext/io/console
-make DESTDIR\= sitearchdir\=./.gem.20261015-276987-7mutr7 sitelibdir\=./.gem.20261015-276987-7mutr7 clean
+make DESTDIR\= sitearchdir\=./.gem.20261015-286051-rblxzw sitelibdir\=./.gem.20261015-286051-rblxzw clean

@@ -3,16 +3,16 @@ current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle
 creating Makefile
 
 current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/websocket-driver-0.8.0/ext/websocket-driver
-make DESTDIR\= sitearchdir\=./.gem.20261015-276987-lt64us sitelibdir\=./.gem.20261015-276987-lt64us clean
+make DESTDIR\= sitearchdir\=./.gem.20261015-286051-jb40b4 sitelibdir\=./.gem.20261015-286051-jb40b4 clean
 
 current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/websocket-driver-0.8.0/ext/websocket-driver
-make DESTDIR\= sitearchdir\=./.gem.20261015-276987-lt64us sitelibdir\=./.gem.20261015-276987-lt64us
+make DESTDIR\= sitearchdir\=./.gem.20261015-286051-jb40b4 sitelibdir\=./.gem.20261015-286051-jb40b4
 compiling websocket_mask.c
 linking shared-object websocket_mask.so
 
 current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/websocket-driver-0.8.0/ext/websocket-driver
-make DESTDIR\= sitearchdir\=./.gem.20261015-276987-lt64us sitelibdir\=./.gem.20261015-276987-lt64us install
-/usr/bin/install -c -m 0755 websocket_mask.so ./.gem.20261015-276987-lt64us
+make DESTDIR\= sitearchdir\=./.gem.20261015-286051-jb40b4 sitelibdir\=./.gem.20261015-286051-jb40b4 install
+/usr/bin/install -c -m 0755 websocket_mask.so ./.gem.20261015-286051-jb40b4
 
 current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/websocket-driver-0.8.0/ext/websocket-driver
-make DESTDIR\= sitearchdir\=./.gem.20261015-276987-lt64us sitelibdir\=./.gem.20261015-276987-lt64us clean
+make DESTDIR\= sitearchdir\=./.gem.20261015-286051-jb40b4 sitelibdir\=./.gem.20261015-286051-jb40b4 clean

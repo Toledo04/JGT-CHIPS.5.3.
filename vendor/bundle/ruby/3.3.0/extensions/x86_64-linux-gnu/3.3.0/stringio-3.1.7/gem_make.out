@@ -4,16 +4,16 @@ checking for rb_io_mode_t in ruby/io.h... no
 creating Makefile
 
 current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/stringio-3.1.7/ext/stringio
-make DESTDIR\= sitearchdir\=./.gem.20261015-276987-anina8 sitelibdir\=./.gem.20261015-276987-anina8 clean
+make DESTDIR\= sitearchdir\=./.gem.20261015-286051-sgjqbf sitelibdir\=./.gem.20261015-286051-sgjqbf clean
 
 current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/stringio-3.1.7/ext/stringio
-make DESTDIR\= sitearchdir\=./.gem.20261015-276987-anina8 sitelibdir\=./.gem.20261015-276987-anina8
+make DESTDIR\= sitearchdir\=./.gem.20261015-286051-sgjqbf sitelibdir\=./.gem.20261015-286051-sgjqbf
 compiling stringio.c
 linking shared-object stringio.so
 
 current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/stringio-3.1.7/ext/stringio
-make DESTDIR\= sitearchdir\=./.gem.20261015-276987-anina8 sitelibdir\=./.gem.20261015-276987-anina8 install
-/usr/bin/install -c -m 0755 stringio.so ./.gem.20261015-276987-anina8
+make DESTDIR\= sitearchdir\=./.gem.20261015-286051-sgjqbf sitelibdir\=./.gem.20261015-286051-sgjqbf install
+/usr/bin/install -c -m 0755 stringio.so ./.gem.20261015-286051-sgjqbf
 
 current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/stringio-3.1.7/ext/stringio
-make DESTDIR\= sitearchdir\=./.gem.20261015-276987-anina8 sitelibdir\=./.gem.20261015-276987-anina8 clean
+make DESTDIR\= sitearchdir\=./.gem.20261015-286051-sgjqbf sitelibdir\=./.gem.20261015-286051-sgjqbf clean

@@ -3,16 +3,16 @@ current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle
 creating Makefile
 
 current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
-make DESTDIR\= sitearchdir\=./.gem.20261015-276987-gn72zy sitelibdir\=./.gem.20261015-276987-gn72zy clean
+make DESTDIR\= sitearchdir\=./.gem.20261015-286051-qym3qu sitelibdir\=./.gem.20261015-286051-qym3qu clean
 
 current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
-make DESTDIR\= sitearchdir\=./.gem.20261015-276987-gn72zy sitelibdir\=./.gem.20261015-276987-gn72zy
+make DESTDIR\= sitearchdir\=./.gem.20261015-286051-qym3qu sitelibdir\=./.gem.20261015-286051-qym3qu
 compiling cruby.c
 linking shared-object skiptrace/internal/cruby.so
 
 current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
-make DESTDIR\= sitearchdir\=./.gem.20261015-276987-gn72zy sitelibdir\=./.gem.20261015-276987-gn72zy install
-/usr/bin/install -c -m 0755 cruby.so ./.gem.20261015-276987-gn72zy/skiptrace/internal
+make DESTDIR\= sitearchdir\=./.gem.20261015-286051-qym3qu sitelibdir\=./.gem.20261015-286051-qym3qu install
+/usr/bin/install -c -m 0755 cruby.so ./.gem.20261015-286051-qym3qu/skiptrace/internal
 
 current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
-make DESTDIR\= sitearchdir\=./.gem.20261015-276987-gn72zy sitelibdir\=./.gem.20261015-276987-gn72zy clean
+make DESTDIR\= sitearchdir\=./.gem.20261015-286051-qym3qu sitelibdir\=./.gem.20261015-286051-qym3qu clean

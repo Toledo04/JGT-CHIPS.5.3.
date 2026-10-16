@@ -4,16 +4,16 @@ checking for rb_ext_ractor_safe() in ruby.h... yes
 creating Makefile
 
 current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/erb-5.0.2/ext/erb/escape
-make DESTDIR\= sitearchdir\=./.gem.20261015-276987-hqon09 sitelibdir\=./.gem.20261015-276987-hqon09 clean
+make DESTDIR\= sitearchdir\=./.gem.20261015-286051-y1m7lp sitelibdir\=./.gem.20261015-286051-y1m7lp clean
 
 current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/erb-5.0.2/ext/erb/escape
-make DESTDIR\= sitearchdir\=./.gem.20261015-276987-hqon09 sitelibdir\=./.gem.20261015-276987-hqon09
+make DESTDIR\= sitearchdir\=./.gem.20261015-286051-y1m7lp sitelibdir\=./.gem.20261015-286051-y1m7lp
 compiling escape.c
 linking shared-object erb/escape.so
 
 current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/erb-5.0.2/ext/erb/escape
-make DESTDIR\= sitearchdir\=./.gem.20261015-276987-hqon09 sitelibdir\=./.gem.20261015-276987-hqon09 install
-/usr/bin/install -c -m 0755 escape.so ./.gem.20261015-276987-hqon09/erb
+make DESTDIR\= sitearchdir\=./.gem.20261015-286051-y1m7lp sitelibdir\=./.gem.20261015-286051-y1m7lp install
+/usr/bin/install -c -m 0755 escape.so ./.gem.20261015-286051-y1m7lp/erb
 
 current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/erb-5.0.2/ext/erb/escape
-make DESTDIR\= sitearchdir\=./.gem.20261015-276987-hqon09 sitelibdir\=./.gem.20261015-276987-hqon09 clean
+make DESTDIR\= sitearchdir\=./.gem.20261015-286051-y1m7lp sitelibdir\=./.gem.20261015-286051-y1m7lp clean

@@ -8,18 +8,18 @@ checking for BIO_read() in -llibeay32... no
 creating Makefile
 
 current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/puma-7.0.4/ext/puma_http11
-make DESTDIR\= sitearchdir\=./.gem.20261015-276987-81ap0q sitelibdir\=./.gem.20261015-276987-81ap0q clean
+make DESTDIR\= sitearchdir\=./.gem.20261015-286051-otjnb1 sitelibdir\=./.gem.20261015-286051-otjnb1 clean
 
 current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/puma-7.0.4/ext/puma_http11
-make DESTDIR\= sitearchdir\=./.gem.20261015-276987-81ap0q sitelibdir\=./.gem.20261015-276987-81ap0q
+make DESTDIR\= sitearchdir\=./.gem.20261015-286051-otjnb1 sitelibdir\=./.gem.20261015-286051-otjnb1
 compiling http11_parser.c
 compiling mini_ssl.c
 compiling puma_http11.c
 linking shared-object puma/puma_http11.so
 
 current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/puma-7.0.4/ext/puma_http11
-make DESTDIR\= sitearchdir\=./.gem.20261015-276987-81ap0q sitelibdir\=./.gem.20261015-276987-81ap0q install
-/usr/bin/install -c -m 0755 puma_http11.so ./.gem.20261015-276987-81ap0q/puma
+make DESTDIR\= sitearchdir\=./.gem.20261015-286051-otjnb1 sitelibdir\=./.gem.20261015-286051-otjnb1 install
+/usr/bin/install -c -m 0755 puma_http11.so ./.gem.20261015-286051-otjnb1/puma
 
 current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/puma-7.0.4/ext/puma_http11
-make DESTDIR\= sitearchdir\=./.gem.20261015-276987-81ap0q sitelibdir\=./.gem.20261015-276987-81ap0q clean
+make DESTDIR\= sitearchdir\=./.gem.20261015-286051-otjnb1 sitelibdir\=./.gem.20261015-286051-otjnb1 clean
