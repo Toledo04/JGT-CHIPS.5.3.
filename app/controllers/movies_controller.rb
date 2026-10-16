@@ -90,7 +90,7 @@ class MoviesController < ApplicationController
       if params[:ratings].present?
         session[:ratings] = params[:ratings].respond_to?(:to_unsafe_h) ? params[:ratings].to_unsafe_h : params[:ratings]
       elsif params[:commit].present? && params[:ratings].blank?
-        session[:ratings] = {} # No boxes checked on ratings 
+        session[:ratings] = default_ratings # Handles no checked boxes 
       elsif session[:ratings].blank?
         session[:ratings] = default_ratings
       end
