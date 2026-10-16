@@ -22,17 +22,17 @@ checking for RB_WARN_CATEGORY_DEPRECATED in ruby.h... yes
 creating Makefile
 
 current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/bigdecimal-3.2.3/ext/bigdecimal
-make DESTDIR\= sitearchdir\=./.gem.20261015-286051-fk06mz sitelibdir\=./.gem.20261015-286051-fk06mz clean
+make DESTDIR\= sitearchdir\=./.gem.20261015-293707-db84c3 sitelibdir\=./.gem.20261015-293707-db84c3 clean
 
 current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/bigdecimal-3.2.3/ext/bigdecimal
-make DESTDIR\= sitearchdir\=./.gem.20261015-286051-fk06mz sitelibdir\=./.gem.20261015-286051-fk06mz
+make DESTDIR\= sitearchdir\=./.gem.20261015-293707-db84c3 sitelibdir\=./.gem.20261015-293707-db84c3
 compiling bigdecimal.c
 compiling missing.c
 linking shared-object bigdecimal.so
 
 current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/bigdecimal-3.2.3/ext/bigdecimal
-make DESTDIR\= sitearchdir\=./.gem.20261015-286051-fk06mz sitelibdir\=./.gem.20261015-286051-fk06mz install
-/usr/bin/install -c -m 0755 bigdecimal.so ./.gem.20261015-286051-fk06mz
+make DESTDIR\= sitearchdir\=./.gem.20261015-293707-db84c3 sitelibdir\=./.gem.20261015-293707-db84c3 install
+/usr/bin/install -c -m 0755 bigdecimal.so ./.gem.20261015-293707-db84c3
 
 current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/bigdecimal-3.2.3/ext/bigdecimal
-make DESTDIR\= sitearchdir\=./.gem.20261015-286051-fk06mz sitelibdir\=./.gem.20261015-286051-fk06mz clean
+make DESTDIR\= sitearchdir\=./.gem.20261015-293707-db84c3 sitelibdir\=./.gem.20261015-293707-db84c3 clean

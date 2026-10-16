@@ -6,10 +6,10 @@ checking for altzone in time.h with  -Werror... no
 creating Makefile
 
 current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/date-3.4.1/ext/date
-make DESTDIR\= sitearchdir\=./.gem.20261015-286051-q49n4x sitelibdir\=./.gem.20261015-286051-q49n4x clean
+make DESTDIR\= sitearchdir\=./.gem.20261015-293707-4fhwi6 sitelibdir\=./.gem.20261015-293707-4fhwi6 clean
 
 current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/date-3.4.1/ext/date
-make DESTDIR\= sitearchdir\=./.gem.20261015-286051-q49n4x sitelibdir\=./.gem.20261015-286051-q49n4x
+make DESTDIR\= sitearchdir\=./.gem.20261015-293707-4fhwi6 sitelibdir\=./.gem.20261015-293707-4fhwi6
 compiling date_core.c
 compiling date_parse.c
 compiling date_strftime.c
@@ -17,8 +17,8 @@ compiling date_strptime.c
 linking shared-object date_core.so
 
 current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/date-3.4.1/ext/date
-make DESTDIR\= sitearchdir\=./.gem.20261015-286051-q49n4x sitelibdir\=./.gem.20261015-286051-q49n4x install
-/usr/bin/install -c -m 0755 date_core.so ./.gem.20261015-286051-q49n4x
+make DESTDIR\= sitearchdir\=./.gem.20261015-293707-4fhwi6 sitelibdir\=./.gem.20261015-293707-4fhwi6 install
+/usr/bin/install -c -m 0755 date_core.so ./.gem.20261015-293707-4fhwi6
 
 current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/date-3.4.1/ext/date
-make DESTDIR\= sitearchdir\=./.gem.20261015-286051-q49n4x sitelibdir\=./.gem.20261015-286051-q49n4x clean
+make DESTDIR\= sitearchdir\=./.gem.20261015-293707-4fhwi6 sitelibdir\=./.gem.20261015-293707-4fhwi6 clean

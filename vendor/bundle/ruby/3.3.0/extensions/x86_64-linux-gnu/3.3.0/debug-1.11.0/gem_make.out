@@ -3,17 +3,17 @@ current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle
 creating Makefile
 
 current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/debug-1.11.0/ext/debug
-make DESTDIR\= sitearchdir\=./.gem.20261015-286051-s4bj5j sitelibdir\=./.gem.20261015-286051-s4bj5j clean
+make DESTDIR\= sitearchdir\=./.gem.20261015-293707-i307b7 sitelibdir\=./.gem.20261015-293707-i307b7 clean
 
 current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/debug-1.11.0/ext/debug
-make DESTDIR\= sitearchdir\=./.gem.20261015-286051-s4bj5j sitelibdir\=./.gem.20261015-286051-s4bj5j
+make DESTDIR\= sitearchdir\=./.gem.20261015-293707-i307b7 sitelibdir\=./.gem.20261015-293707-i307b7
 compiling debug.c
 compiling iseq_collector.c
 linking shared-object debug/debug.so
 
 current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/debug-1.11.0/ext/debug
-make DESTDIR\= sitearchdir\=./.gem.20261015-286051-s4bj5j sitelibdir\=./.gem.20261015-286051-s4bj5j install
-/usr/bin/install -c -m 0755 debug.so ./.gem.20261015-286051-s4bj5j/debug
+make DESTDIR\= sitearchdir\=./.gem.20261015-293707-i307b7 sitelibdir\=./.gem.20261015-293707-i307b7 install
+/usr/bin/install -c -m 0755 debug.so ./.gem.20261015-293707-i307b7/debug
 
 current directory: /home/m0nkeyw1zard/Desktop/cs169/JGT-CHIPS.5.3./vendor/bundle/ruby/3.3.0/gems/debug-1.11.0/ext/debug
-make DESTDIR\= sitearchdir\=./.gem.20261015-286051-s4bj5j sitelibdir\=./.gem.20261015-286051-s4bj5j clean
+make DESTDIR\= sitearchdir\=./.gem.20261015-293707-i307b7 sitelibdir\=./.gem.20261015-293707-i307b7 clean
