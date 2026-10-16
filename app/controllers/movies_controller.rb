@@ -79,17 +79,19 @@ class MoviesController < ApplicationController
       @all_ratings = Movie.all_ratings
       default_ratings = @all_ratings.index_with { "1" }
 
-      # Sorting handling
-      if params[:sort].present?
+      # Sorting
+      if params[:sort_by].present?
+        session[:sort] = params[:sort_by]
+      elsif params[:sort].present?
         session[:sort] = params[:sort]
       end
       @sort = session[:sort]
 
-      # Ratings handling
+      # Ratings 
       if params[:ratings].present?
         session[:ratings] = params[:ratings].respond_to?(:to_unsafe_h) ? params[:ratings].to_unsafe_h : params[:ratings]
       elsif params[:commit].present? && params[:ratings].blank?
-        session[:ratings] = {} # No boxes checked on ratings 
+        session[:ratings] = {} 
       elsif session[:ratings].blank?
         session[:ratings] = default_ratings
       end
@@ -98,4 +100,4 @@ class MoviesController < ApplicationController
       @selected_ratings_hash = raw_ratings.is_a?(ActionController::Parameters) ? raw_ratings.to_unsafe_h : raw_ratings
       @selected_ratings = @selected_ratings_hash.keys
     end
-end
+  end
