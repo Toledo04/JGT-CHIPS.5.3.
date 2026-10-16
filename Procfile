@@ -1,1 +1,1 @@
-web: bunlde exec rails server -p $PORT -e production 
+echo "web: bundle exec rails server -p $PORT -e production" > Procfile
