@@ -4,7 +4,7 @@
   Include:
   <% @all_ratings.each do |rating| %>
     <%= rating %>
-    <%= check_box_tag "ratings[#{rating}]", "1", @selected_ratings.include?(rating), id: "ratings_#{rating}" %>
+    <%= check_box_tag "ratings[#{rating}]", "1", @ratings_to_show.include?(rating), id: "ratings_#{rating}" %>
   <% end %>
   <%= submit_tag 'Refresh', id: 'ratings_submit' %>
 <% end %>
@@ -13,12 +13,16 @@
   <caption class="visually-hidden">All movies.</caption>
   <thead>
     <tr>
-      <th scope="col" class="<%= 'hilite' if @sort == 'title' %>">
-        <%= link_to 'Movie Title', movies_path(sort_by: 'title', ratings: @selected_ratings_hash), id: 'title_header' %>
+      <th scope="col" aria-sort="<%= sort_aria('title') %>" class="<%= sort_classes('title') %>">
+        <%= link_to movies_path(sort_by: 'title', ratings: @selected_ratings_hash), id: 'title_header' do %>
+          Movie Title<%= sort_indicator('title') %>
+        <% end %>
       </th>
       <th scope="col">Rating</th>
-      <th scope="col" class="<%= 'hilite' if @sort == 'release_date' %>">
-        <%= link_to 'Release Date', movies_path(sort_by: 'release_date', ratings: @selected_ratings_hash), id: 'release_date_header' %>
+      <th scope="col" aria-sort="<%= sort_aria('release_date') %>" class="<%= sort_classes('release_date') %>">
+        <%= link_to movies_path(sort_by: 'release_date', ratings: @selected_ratings_hash), id: 'release_date_header' do %>
+          Release Date<%= sort_indicator('release_date') %>
+        <% end %>
       </th>
       <th scope="col">More Info</th>
     </tr>

@@ -97,7 +97,7 @@ class MoviesController < ApplicationController
         session[:ratings] ||= default_ratings_hash
       end
 
-      # 3. Normalize ratings for model & view
+      # 3. Normalize ratings
       raw_ratings = session[:ratings] || default_ratings_hash
       if raw_ratings.is_a?(Hash) || raw_ratings.is_a?(ActionController::Parameters)
         @selected_ratings_hash = raw_ratings.to_h
@@ -109,5 +109,7 @@ class MoviesController < ApplicationController
         @selected_ratings = @all_ratings
         @selected_ratings_hash = default_ratings_hash
       end
+
+      @ratings_to_show = @selected_ratings
     end
 end
