@@ -4,9 +4,9 @@ class MoviesController < ApplicationController
 
   # GET /movies or /movies.json
   def index
-    @movies = Movie.where(rating: @selected_ratings)
+    @movies = Movie.with_ratings(@selected_ratings)
 
-    case @sort
+    case @sort_by
     when 'title'
       @movies = @movies.order('title ASC')
     when 'release_date'
@@ -65,7 +65,7 @@ class MoviesController < ApplicationController
     end
   end
 
-  private # Keeping tangz DRY 
+  private 
     def set_movie
       @movie = Movie.find(params[:id])
     end
@@ -74,29 +74,40 @@ class MoviesController < ApplicationController
       params.require(:movie).permit(:title, :rating, :description, :release_date)
     end
 
-    # Keeping session data 
     def load_ratings_and_sorting
       @all_ratings = Movie.all_ratings
-      default_ratings = @all_ratings.index_with { "1" }
+      default_ratings_hash = @all_ratings.index_with { "1" }
 
-      # Sorting handling
+      # 1. Sorting handling
       sort_param = params[:sort_by] || params[:sort]
       if sort_param.present?
-        session[:sort] = sort_param
+        session[:sort_by] = sort_param
       end
-      @sort = session[:sort]
+      @sort_by = session[:sort_by]
+      @sort = @sort_by
 
-      # Ratings handling
+      # 2. Ratings handling
       if params[:ratings].present?
-        session[:ratings] = params[:ratings].respond_to?(:to_unsafe_h) ? params[:ratings].to_unsafe_h : params[:ratings]
+        ratings = params[:ratings]
+        ratings = ratings.to_unsafe_h if ratings.respond_to?(:to_unsafe_h)
+        session[:ratings] = ratings
       elsif params[:commit].present? && params[:ratings].blank?
-        session[:ratings] = default_ratings # Handles no checked boxes 
-      elsif session[:ratings].blank?
-        session[:ratings] = default_ratings
+        session[:ratings] = default_ratings_hash
+      else
+        session[:ratings] ||= default_ratings_hash
       end
 
-      raw_ratings = session[:ratings] || default_ratings
-      @selected_ratings_hash = raw_ratings.is_a?(ActionController::Parameters) ? raw_ratings.to_unsafe_h : raw_ratings
-      @selected_ratings = @selected_ratings_hash.keys
+      # 3. Normalize ratings for model & view
+      raw_ratings = session[:ratings] || default_ratings_hash
+      if raw_ratings.is_a?(Hash) || raw_ratings.is_a?(ActionController::Parameters)
+        @selected_ratings_hash = raw_ratings.to_h
+        @selected_ratings = @selected_ratings_hash.keys
+      elsif raw_ratings.is_a?(Array)
+        @selected_ratings = raw_ratings
+        @selected_ratings_hash = @selected_ratings.index_with { "1" }
+      else
+        @selected_ratings = @all_ratings
+        @selected_ratings_hash = default_ratings_hash
+      end
     end
 end
