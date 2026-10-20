@@ -3,7 +3,25 @@ class MoviesController < ApplicationController
 
   # GET /movies or /movies.json
   def index
-    @movies = Movie.all
+    @all_ratings = Movie.all_ratings
+
+    @sort_by = params[:sort_by] || session[:sort_by]
+    session[:sort_by] = @sort_by if params[:sort_by].present?
+
+    if params[:ratings].present?
+      @ratings_to_show = params[:ratings].keys
+      session[:ratings] = params[:ratings]
+    elsif session[:ratings].present?
+      @ratings_to_show = session[:ratings].keys
+    else
+      @ratings_to_show = @all_ratings
+    end
+
+    if params[:sort_by].nil? && params[:ratings].nil? && (session[:sort_by].present? || session[:ratings].present?)
+      redirect_to movies_path(sort_by: @sort_by, ratings: Hash[@ratings_to_show.map { |r| [r, "1"] }]) and return
+    end
+
+    @movies = Movie.with_ratings(@ratings_to_show, @sort_by)
   end
 
   # GET /movies/1 or /movies/1.json
@@ -58,12 +76,10 @@ class MoviesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
     def set_movie
       @movie = Movie.find(params[:id])
     end
 
-    # Only allow a list of trusted parameters through.
     def movie_params
       params.require(:movie).permit(:title, :rating, :description, :release_date)
     end
